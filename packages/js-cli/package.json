@@ -1,0 +1,32 @@
+{
+  "name": "js-cli",
+  "version": "0.0.1",
+  "description": "",
+  "type": "module",
+  "main": "./bin/index.mjs",
+  "module": "./bin/index.mjs",
+  "bin": {
+    "js-cli": "./bin/index.mjs",
+    "js": "./bin/index.mjs"
+  },
+  "scripts": {
+    "dev": "node --experimental-json-modules ./bin/index.js -v",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@babel/core": "7.16.5",
+    "@babel/preset-env": "7.16.5",
+    "chalk": "5.0.0",
+    "commander": "8.3.0",
+    "download": "8.0.0",
+    "fs-extra": "10.0.0",
+    "handlebars": "4.7.7",
+    "inquirer": "8.2.0",
+    "log-symbols": "5.1.0",
+    "ora": "6.0.1",
+    "update-notifier": "5.1.0"
+  }
+}
