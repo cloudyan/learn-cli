@@ -8,6 +8,7 @@ js-cli
   - upgrade
   - mirror
   - download
+  - init
 ```
 
 - https://juejin.cn/post/6879265583205089287

@@ -5,6 +5,7 @@ import pkg from '../package.json';
 import updateCheck from '../src/update.mjs';
 import setMirror from '../src/mirror.mjs';
 import dlTemplate from '../src/download.mjs';
+import initProject from '../src/init.mjs';
 
 program.version(pkg.version, '-v, --version');
 
@@ -28,5 +29,14 @@ program
   .action(() => {
     dlTemplate();
   })
+
+program
+  .name('js-cli')
+  .usage('<commands> [options]')
+  .command('init <project_name>')
+  .action(project => {
+    initProject(project);
+  })
+
 
 program.parse(process.argv);

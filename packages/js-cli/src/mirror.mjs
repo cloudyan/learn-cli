@@ -1,4 +1,4 @@
-import symbols from 'log-symbols';
+import logSymbols from 'log-symbols';
 import fse from 'fs-extra';
 import path from 'path';
 import chalk from 'chalk';
@@ -20,9 +20,9 @@ async function mirrorAction(link) {
     const jsonConfig = await fse.readJson(configPath);
     jsonConfig.mirror = link;
     await fse.writeJson(configPath, jsonConfig);
-    console.log(symbols.success, 'Set the mirror successful.');
+    console.log(logSymbols.success, 'Set the mirror successful.');
   } catch(err) {
-    console.log(symbols.error, chalk.red(`Set the mirror failed. ${err}`));
+    console.log(logSymbols.error, chalk.red(`Set the mirror failed. ${err}`));
     process.exit();
   }
 }
