@@ -2,7 +2,7 @@
 
 import program from 'commander';
 import pkg from '../package.json';
-import updateCheck from '../lib/update.mjs';
+import updateCheck from '../src/update.mjs';
 
 program.version(pkg.version, '-v, --version');
 
