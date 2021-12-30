@@ -13,6 +13,10 @@
     "dev": "node --experimental-json-modules ./bin/index.mjs -v",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
+  "publishConfig": {
+    "registry": "https://registry.npmjs.org/",
+    "access": "public"
+  },
   "keywords": [],
   "author": "",
   "license": "ISC",
